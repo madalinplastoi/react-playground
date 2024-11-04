@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                  // Use latest ECMAScript features
+    "module": "ESNext",                  // Use ES modules
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Libraries included
+    "allowJs": true,                     // Allow JavaScript files
+    "skipLibCheck": true,                // Skip type checking of declaration files
+    "esModuleInterop": true,             // Enable interop for default imports
+    "allowSyntheticDefaultImports": true,// Enable synthetic default imports
+    "strict": true,                      // Enable strict type-checking
+    "forceConsistentCasingInFileNames": true, // File name case-sensitive
+    "moduleResolution": "Node",          // Resolve modules the Node.js way
+    "isolatedModules": true,             // Isolate modules for bundlers like Webpack
+    "noEmit": true,                      // Don't emit compiled files
+    "jsx": "react-jsx",                  // JSX support for React (React 17+)
+    "resolveJsonModule": true,           // Allow importing JSON files
+    "noImplicitAny": false               // Warn for implicit any types (set to true for strict checking)
+  },
+  "include": ["src", "src/declaration.d.ts"],              // Include all files in src folder
+  "exclude": ["node_modules"]            // Exclude node_modules
+}
